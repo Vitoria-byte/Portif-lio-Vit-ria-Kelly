@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        font-family: "Abel", sans-serif;
+        font-weight: 400px;
+        font-style: normal;
+      }      
+
+html{
+scroll-behavior: smooth;
+}
+
+body{
+background-color: #9a37a5;
+height: 100vh;
+background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/920f6022-e07a-41b6-86fc-fd437916e200/dg99hwt-427a8e14-3213-4c6c-8fcc-07927e58abad.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzkyMGY2MDIyLWUwN2EtNDFiNi04NmZjLWZkNDM3OTE2ZTIwMFwvZGc5OWh3dC00MjdhOGUxNC0zMjEzLTRjNmMtOGZjYy0wNzkyN2U1OGFiYWQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.k_8cc-XUDs8cve5T5Ky7yUfBwaaiMiYRDxrH60ZTLIk"); 
+background-attachment: fixed; 
+background-repeat: no-repeat;
+}
+
+  
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(8, 8, 8);
+    color: #f306c7;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    color: #fdfafa;
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #f6f5f6;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 30px 4% 4%;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+color: #f306c7;
+/* text-decoration: none; Para tirar a lista de baixo do nome */
+text-decoration: none;
+display: inline-block;
+transition: .2s;
+}
+
+header a:hover{
+    color: #f8f5f5;
+    transform: scale(1.05);
+    }
+
+header nav ul{
+list-style-type: none;
+}
+header nav ul li{
+    display: inline-block; /* Para deixar no maio */
+    display: inline-block;
+    padding: 0 40px;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(8, 8, 8);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Estilo do topo do site */
+section.topo-do-site{
+    padding: 40px 1%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    color: #f506b9;
+    text-align: center;
+    border: 10px solid rgb(8, 8, 8);
+    border-radius: 50px;
+}
+.topo-do-site h1{
+    color: #0a0a0a;
+    font-size: 60px;
+    line-height: 20px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #f9f8f8;
+    margin: 15px; 0;
+    font-size: 30px;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    /* animation: flutuar 2s ease-in-out infinite alternate;  */
+    border-radius: 30%;
+    margin: 4%;
+}
+
+/* Estilo do sobre */
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+align-items: center;
+gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #f7f7f7;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+} 
+
+.sobre .txt-sobre h2 span{
+    color: #e112b1;
+    display: block;
+} 
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: #f3f1f3;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+/* Estilos dos projetos */
+section.projeto{
+    padding: 40px 4%;
+    border: 10px solid rgb(2, 2, 2);
+    border-radius: 45px;
+}
+
+section.projeto .flex{
+    gap: 60px;
+}
+
+.projeto .projeto-box{
+color: #f7f3f7;
+padding: 40px;
+border-radius: 20px;
+margin-top: 45px;
+transition: .2s;
+}
+
+.projeto .projeto-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #020202;
+}
+
+.projeto .projeto-box i{
+    font-size: 70px;
+    color: #060606;
+}
+
+.projeto .projeto-box h3{
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.titulo{
+    color: #f8f6f6;
+}
+
+/* Estilo do formulário de contato */
+section.formulario{
+padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100;
+    background-color: #0000007f;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #f7f3f7;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+width: 120px;
+background-color: #faf8fa;
+color: #020202;
+font-weight: 700;
+cursor: pointer;
+transition: 2.s;
+}
+
+/* Estilo do rodapé */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #020202;
+}
+
+footer .flex{
+justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+footer .line-footer p i{
+    color: #f506b9;
+    font-size: 22px;
+}
+
+footer .line-footer a{
+    color: #f506b9;
+}
+
+@media screen and (max-width: 1020px){
+/* Classes gerais */
+.flex{
+    flex-direction: column;
+}
+
+    /* Cabeçalho */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+}
+
+/* Topo do site */
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.topo-do-site h1{
+    font-size: 32px;
+    line-height: 45px;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+} 
+
+.btn-social{
+    text-align: center;
+}
+
+/* Rodape */
+footer .flex{
+    flex-direction: column;
+    gap: 30px;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
